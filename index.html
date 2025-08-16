@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نفر زيزي | الطعم الأصلي للعيش المصري في كندا | Nefer ZiZi Egyptian Bread</title>
+    
+    <!-- SEO Meta Tags - Optimized for Canadian Market -->
+    <meta name="description" content="اكتشف الطعم الأصلي للعيش المصري (العيش البلدي) في كندا. نفر زيزي هو خبز مصري أصيل، مخبوز في مصر ومتوفر الآن في تورونتو، مونتريال، فانكوفر، وكالغاري.">
+    <meta name="keywords" content="العيش المصري في كندا, نفر زيزي, عيش بلدي, خبز القمح الكامل, منتجات مصرية في كندا, خبز أبو ردة, Egyptian bread Canada, Nefer ZiZi, Baladi bread Toronto, whole wheat bread Montreal, Egyptian products Vancouver, pain égyptien Canada, pain baladi Montréal">
+    <meta name="author" content="JS Group">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="CA">
+    <meta name="geo.placename" content="Canada">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="نفر زيزي | الطعم الأصلي للعيش المصري في كندا">
+    <meta property="og:description" content="اكتشف الطعم الأصلي للعيش المصري أبو ردة في كندا. نفر زيزي متاح الآن في جميع محلات المنتجات المصرية بكندا.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bymofi.github.io/nefer-zizi/">
+    <meta property="og:image" content="images/hero-bread.jpg">
+    <meta property="og:image:alt" content="صورة لخبز نفر زيزي المصري الأصيل">
+    <meta property="og:locale" content="ar_EG">
+    <meta property="og:locale:alternate" content="en_CA">
+    <meta property="og:locale:alternate" content="fr_CA">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="نفر زيزي | الطعم الأصلي للعيش المصري في كندا">
+    <meta name="twitter:description" content="اكتشف الطعم الأصلي للعيش المصري أبو ردة في كندا.">
+    <meta name="twitter:image" content="images/hero-bread.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- Google Fonts - Arabic Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- CSS -->
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            /* Color Palette - Egyptian Theme */
+            --primary-color: #D4AF37; /* Gold */
+            --secondary-color: #8B4513; /* Brown */
+            --accent-color: #FF6B35; /* Orange */
+            --text-dark: #2C1810;
+            --text-light: #F5F5F5;
+            --background-light: #FFF8E7; /* Creamy background */
+            --background-dark: #1A1A1A;
+            
+            /* Typography */
+            --font-arabic: 'Cairo', 'Amiri', Arial, sans-serif;
+            --font-english: 'Inter', Arial, sans-serif;
+            
+            /* Spacing */
+            --section-padding: 80px 0;
+            --container-padding: 0 20px;
+            
+            /* Border Radius */
+            --border-radius: 10px;
+            --border-radius-large: 20px;
+            
+            /* Shadows */
+            --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.1);
+            --shadow-medium: 0 4px 20px rgba(0, 0, 0, 0.15);
+            --shadow-heavy: 0 8px 30px rgba(0, 0, 0, 0.2);
+            
+            /* Transitions */
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: var(--font-arabic);
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--background-light);
+            direction: rtl;
+            overflow-x: hidden;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--container-padding);
+        }
+
+        /* Section Headers */
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-dark);
+            opacity: 0.8;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 248, 231, 0.85); /* Semi-transparent cream */
+            backdrop-filter: blur(10px);
+            padding: 15px 0;
+            z-index: 1000;
+            transition: var(--transition);
+            box-shadow: var(--shadow-light);
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 248, 231, 0.98);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--container-padding);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo img {
+            height: 50px;
+            width: auto;
+            border-radius: 8px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--primary-color);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover::after, .nav-link.active::after {
+            width: 100%;
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background: var(--text-dark);
+            margin: 3px 0;
+            transition: var(--transition);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding-top: 120px;
+            background: linear-gradient(rgba(255, 248, 220, 0.5), rgba(245, 222, 179, 0.7)), url('images/hero-background.jpg') no-repeat center center/cover;
+            background-attachment: fixed; /* Parallax Effect */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: var(--container-padding);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            margin-bottom: 30px;
+        }
+
+        .brand-name {
+            display: block;
+            font-size: 4rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            display: block;
+            font-size: 2rem;
+            color: var(--secondary-color);
+            font-weight: 400;
+        }
+
+        .hero-description {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            color: var(--text-dark);
+            background: rgba(255, 255, 255, 0.5);
+            padding: 10px;
+            border-radius: var(--border-radius);
+        }
+
+        .english-text {
+            font-family: var(--font-english);
+            font-size: 1.1rem;
+            color: var(--secondary-color);
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition);
+            display: inline-block;
+            text-align: center;
+            font-family: var(--font-arabic);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            box-shadow: var(--shadow-light);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--secondary-color);
+            border: 2px solid var(--secondary-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--secondary-color);
+            color: white;
+        }
+
+        .hero-image {
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: var(--border-radius-large);
+            box-shadow: var(--shadow-heavy);
+            transition: var(--transition);
+        }
+
+        .hero-image img:hover {
+            transform: scale(1.05);
+        }
+
+        /* About Section */
+        .about {
+            padding: var(--section-padding);
+            background: var(--background-light);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .about-text h3 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .about-text p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+        }
+
+        .ingredients {
+            background: #F9F9F9;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            margin: 30px 0;
+            border-right: 4px solid var(--primary-color);
+        }
+
+        .ingredients h4 {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .ingredients ul {
+            list-style: none;
+        }
+
+        .ingredients li {
+            padding: 8px 0;
+            position: relative;
+            padding-right: 25px;
+        }
+
+        .ingredients li::before {
+            content: '✓';
+            position: absolute;
+            right: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .features {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            padding: 15px 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-light);
+            transition: var(--transition);
+        }
+
+        .feature:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .feature i {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+        }
+
+        .feature span {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: var(--border-radius-large);
+            box-shadow: var(--shadow-heavy);
+        }
+
+        /* Gallery Section */
+        #gallery {
+            padding: var(--section-padding);
+            background: linear-gradient(135deg, #F5F5F5 0%, #E8E8E8 100%);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-medium);
+            position: relative;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(44, 24, 16, 0.7);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            transform: translateY(100%);
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover .overlay {
+            transform: translateY(0);
+        }
+
+        /* Locations Section */
+        .locations {
+            padding: var(--section-padding);
+            background: var(--background-light);
+        }
+
+        .locations-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .location-info h3 {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .location-info p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .cities {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .city {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: white;
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-light);
+            transition: var(--transition);
+        }
+
+        .city:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .city i {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+        }
+
+        .city span {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .availability-notice {
+            background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+            color: white;
+            padding: 30px;
+            border-radius: var(--border-radius-large);
+            text-align: center;
+            box-shadow: var(--shadow-medium);
+        }
+
+        .availability-notice i {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .availability-notice p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: var(--section-padding);
+            background: linear-gradient(135deg, #2C1810 0%, #1A1A1A 100%);
+            color: var(--text-light);
+        }
+
+        .contact .section-title,
+        .contact .section-subtitle {
+            color: var(--text-light);
+        }
+
+        .contact .section-title::after {
+            background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+        }
+
+        .contact-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-3px);
+        }
+
+        .contact-item i {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-top: 5px;
+        }
+
+        .contact-item h4 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .contact-item p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            margin: 5px 0;
+        }
+
+        .social-media {
+            text-align: center;
+        }
+
+        .social-media h4 {
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            font-size: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: var(--transition);
+            box-shadow: var(--shadow-light);
+        }
+
+        .social-links a:hover {
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: var(--shadow-medium);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--background-dark);
+            color: var(--text-light);
+            padding: 50px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo img {
+            height: 80px;
+            width: auto;
+            margin-bottom: 15px;
+        }
+
+        .footer-logo p {
+            color: var(--text-light);
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+
+        .footer-links h4,
+        .footer-contact h4 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            opacity: 0.8;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+            opacity: 1;
+        }
+
+        .footer-contact p {
+            color: var(--text-light);
+            opacity: 0.8;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-contact i {
+            color: var(--primary-color);
+            width: 20px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            color: var(--text-light);
+            opacity: 0.6;
+        }
+
+        /* Animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            transition-delay: 0.2s;
+        }
+        
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about-content,
+            .locations-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --section-padding: 60px 0;
+            }
+            
+            .hamburger {
+                display: flex;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                right: -100%;
+                top: 80px; /* Adjusted for navbar height */
+                flex-direction: column;
+                background-color: white;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: var(--shadow-medium);
+                padding: 30px 0;
+            }
+            
+            .nav-menu.active {
+                right: 0;
+            }
+            
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 40px;
+            }
+            
+            .brand-name {
+                font-size: 3rem;
+            }
+            
+            .subtitle {
+                font-size: 1.5rem;
+            }
+            
+            .features {
+                justify-content: center;
+            }
+            
+            .hero-buttons {
+                justify-content: center;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .cities {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .brand-name {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.3rem;
+            }
+            
+            .hero-description {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .btn {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+            
+            .nav-container {
+                padding: 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="images/brand-logo.png" alt="شعار نفر زيزي">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">عن نفر زيزي</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">معرض الصور</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#locations" class="nav-link">أين تجدنا؟</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">تواصل معنا</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content animate-on-scroll">
+                <h1 class="hero-title">
+                    <span class="brand-name">نفر زيزي</span>
+                    <span class="subtitle">الطعم الأصلي للعيش المصري</span>
+                </h1>
+                <p class="hero-description">
+                    أول عيش مصري مصنوع ومخبوز بالكامل في مصر ومتاح الآن في كندا
+                    <br>
+                    <span class="english-text" lang="en">Authentic Egyptian Bread - Made in Egypt, Available in Canada</span>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">اكتشف المزيد</a>
+                    <a href="#locations" class="btn btn-secondary">أين تجدنا؟</a>
+                </div>
+            </div>
+            <div class="hero-image animate-on-scroll">
+                <img src="images/hero-bread.jpg" alt="نفر زيزي - العيش المصري الأصلي في كندا">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">عن نفر زيزي</h2>
+                <p class="section-subtitle">الخبز المصري على أصوله</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text animate-on-scroll">
+                    <h3>خبز مصري أصيل، طعم النيل يصل إلى كندا</h3>
+                    <p>
+                        بينما تقوم بتسخينه في فرنك، ستجد نفسك فجأة في زاوية أحد شوارع القاهرة، 
+                        محاطاً بأحاديث الجيران ومذاق الوطن الذي لا يُنسى.
+                    </p>
+                    <p>
+                        يُعجن هذا الخبز بحب وشغف في قلب القاهرة، حيث تمتزج ذكريات الأجداد مع دفء الشمس التي ترقص على الأهرامات القديمة.
+                    </p>
+                    <div class="ingredients">
+                        <h4>المكونات الطبيعية:</h4>
+                        <ul>
+                            <li>دقيق القمح 72%</li>
+                            <li>ماء</li>
+                            <li>ملح</li>
+                            <li>نخالة (ردة)</li>
+                            <li>خميرة</li>
+                        </ul>
+                    </div>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <span>صنع في مصر</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>طعم أصيل</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>مكونات طبيعية</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image animate-on-scroll">
+                    <img src="images/24.png" alt="فتاة فرعونية ترمز لأصالة المنتج المصري">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">معرض الصور</h2>
+                <p class="section-subtitle">لمحات من الأصالة والجودة</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item animate-on-scroll">
+                    <img src="images/11.png" alt="عملية خبز العيش المصري التقليدي">
+                    <div class="overlay">صناعة يدوية أصيلة</div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="images/17.png" alt="سيدة ترتدي زياً فرعونياً بجانب الخبز">
+                    <div class="overlay">تراث الأجداد</div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="images/13.png" alt="أرغفة خبز نفر زيزي الذهبية الطازجة">
+                    <div class="overlay">طازج وشهي</div>
+                </div>
+                 <div class="gallery-item animate-on-scroll">
+                    <img src="images/21.png" alt="نقوش فرعونية ترمز لتاريخ الخبز في مصر">
+                    <div class="overlay">إلهام من التاريخ</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="locations">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">أين تجدنا؟</h2>
+                <p class="section-subtitle">متوفر في محلات المنتجات المصرية في كندا</p>
+            </div>
+            <div class="locations-content">
+                <div class="location-info">
+                    <h3><span lang="en">Find Us Across Canada</span></h3>
+                    <p>يمكنك العثور على نفر زيزي في جميع محلات المنتجات المصرية والشرق أوسطية في المدن الكبرى:</p>
+                    <div class="cities">
+                        <div class="city animate-on-scroll">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span lang="en">Toronto, Ontario</span>
+                        </div>
+                        <div class="city animate-on-scroll">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span lang="en">Montréal, Québec</span>
+                        </div>
+                        <div class="city animate-on-scroll">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span lang="en">Vancouver, BC</span>
+                        </div>
+                        <div class="city animate-on-scroll">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span lang="en">Calgary, Alberta</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="availability-notice animate-on-scroll">
+                    <i class="fas fa-info-circle"></i>
+                    <p>للاستفسار عن التوفر في منطقتك، يرجى الاتصال بنا</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">تواصل معنا</h2>
+                <p class="section-subtitle">نحن هنا للإجابة على استفساراتك</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item animate-on-scroll">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>الهاتف</h4>
+                            <p><a href="tel:514-519-5844" style="color:white; text-decoration:none;">514-519-5844</a></p>
+                            <p><a href="tel:438-875-0015" style="color:white; text-decoration:none;">438-875-0015</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item animate-on-scroll">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>البريد الإلكتروني</h4>
+                            <p><a href="mailto:jsgroup01234@gmail.com" style="color:white; text-decoration:none;">jsgroup01234@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item animate-on-scroll">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h4>الموقع الإلكتروني</h4>
+                            <p><a href="http://www.richbake.com" target="_blank" rel="noopener" style="color:white; text-decoration:none;">www.richbake.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <h4>تابعنا على:</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61559247638463" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/15145195844" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/group-logo.png" alt="شعار مجموعة JS">
+                    <p>نفر زيزي - الطعم الأصلي للعيش المصري في كندا</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#about">عن نفر زيزي</a></li>
+                        <li><a href="#gallery">معرض الصور</a></li>
+                        <li><a href="#locations">أين تجدنا؟</a></li>
+                        <li><a href="#contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>معلومات التواصل</h4>
+                    <p><i class="fas fa-phone"></i> 514-519-5844</p>
+                    <p><i class="fas fa-envelope"></i> jsgroup01234@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> كندا</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 JS Group. جميع الحقوق محفوظة | صنع في مصر</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            const navbar = document.getElementById('navbar');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+
+            // 1. Navbar Scroll Effect
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // 2. Mobile Navigation
+            if (hamburger && navMenu) {
+                hamburger.addEventListener('click', () => {
+                    hamburger.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        if (navMenu.classList.contains('active')) {
+                            hamburger.classList.remove('active');
+                            navMenu.classList.remove('active');
+                        }
+                    });
+                });
+            }
+
+            // 3. Active Link Highlighting on Scroll
+            const sections = document.querySelectorAll('section[id]');
+            window.addEventListener('scroll', navHighlighter);
+
+            function navHighlighter() {
+                let scrollY = window.pageYOffset;
+                
+                sections.forEach(current => {
+                    const sectionHeight = current.offsetHeight;
+                    const sectionTop = current.offsetTop - 150;
+                    let sectionId = current.getAttribute('id');
+                    
+                    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                        document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active');
+                    } else {
+                        document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active');
+                    }
+                });
+            }
+
+            // 4. Scroll Animations
+            const scrollElements = document.querySelectorAll(".animate-on-scroll");
+
+            const elementInView = (el, dividend = 1) => {
+                const elementTop = el.getBoundingClientRect().top;
+                return (
+                    elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend
+                );
+            };
+
+            const displayScrollElement = (element) => {
+                element.classList.add("is-visible");
+            };
+
+            const handleScrollAnimation = () => {
+                scrollElements.forEach((el) => {
+                    if (elementInView(el, 1.15)) {
+                        displayScrollElement(el);
+                    }
+                })
+            }
+
+            window.addEventListener("scroll", handleScrollAnimation);
+            handleScrollAnimation(); // Initial check on page load
+
+            // Console welcome message
+            console.log(`
+            🍞 نفر زيزي - الطعم الأصلي للعيش المصري
+            🌟 Nefer ZiZi - Authentic Egyptian Bread
+            `);
+
+        });
+    </script>
+</body>
+</html>
