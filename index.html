@@ -18,7 +18,7 @@
     <meta property="og:description" content="اكتشف الطعم الأصلي للعيش المصري أبو ردة في كندا. نفر زيزي متاح الآن في جميع محلات المنتجات المصرية بكندا.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bymofi.github.io/nefer-zizi/">
-    <meta property="og:image" content="images/hero-bread.jpg">
+    <meta property="og:image" content="images/23.png">
     <meta property="og:image:alt" content="صورة لخبز نفر زيزي المصري الأصيل">
     <meta property="og:locale" content="ar_EG">
     <meta property="og:locale:alternate" content="en_CA">
@@ -28,7 +28,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="نفر زيزي | الطعم الأصلي للعيش المصري في كندا">
     <meta name="twitter:description" content="اكتشف الطعم الأصلي للعيش المصري أبو ردة في كندا.">
-    <meta name="twitter:image" content="images/hero-bread.jpg">
+    <meta name="twitter:image" content="images/23.png">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -166,7 +166,7 @@
         .nav-menu {
             display: flex;
             list-style: none;
-            gap: 30px;
+            gap: 25px;
         }
 
         .nav-link {
@@ -215,8 +215,7 @@
         /* Hero Section */
         .hero {
             padding-top: 120px;
-            background: linear-gradient(rgba(255, 248, 220, 0.5), rgba(245, 222, 179, 0.7)), url('images/hero-background.jpg') no-repeat center center/cover;
-            background-attachment: fixed; /* Parallax Effect */
+            background: linear-gradient(135deg, #FFF8DC 0%, #F5DEB3 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -429,6 +428,47 @@
             box-shadow: var(--shadow-heavy);
         }
 
+        /* Certifications Section */
+        #certifications {
+            padding: var(--section-padding);
+            background: white;
+        }
+        .certification-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            background: var(--background-light);
+            padding: 40px;
+            border-radius: var(--border-radius-large);
+            box-shadow: var(--shadow-medium);
+        }
+        .certification-image img {
+            max-width: 250px;
+            height: auto;
+            border-radius: var(--border-radius);
+        }
+        .certification-text {
+            max-width: 600px;
+            text-align: center;
+        }
+        .certification-text h3 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        .certification-text a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 2px solid var(--accent-color);
+            transition: var(--transition);
+        }
+        .certification-text a:hover {
+            color: var(--accent-color);
+        }
+
         /* Gallery Section */
         #gallery {
             padding: var(--section-padding);
@@ -447,6 +487,7 @@
             box-shadow: var(--shadow-medium);
             position: relative;
             cursor: pointer;
+            background-color: #000;
         }
 
         .gallery-item img {
@@ -454,11 +495,12 @@
             height: 300px;
             object-fit: cover;
             display: block;
-            transition: transform 0.4s ease;
+            transition: transform 0.4s ease, opacity 0.4s ease;
         }
 
         .gallery-item:hover img {
             transform: scale(1.1);
+            opacity: 0.7;
         }
 
         .gallery-item .overlay {
@@ -477,6 +519,22 @@
         .gallery-item:hover .overlay {
             transform: translateY(0);
         }
+
+        .video-play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            color: rgba(255, 255, 255, 0.8);
+            pointer-events: none;
+            transition: var(--transition);
+        }
+        .gallery-item:hover .video-play-button {
+            color: white;
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
 
         /* Locations Section */
         .locations {
@@ -748,7 +806,8 @@
         @media (max-width: 992px) {
             .about-content,
             .locations-content,
-            .contact-content {
+            .contact-content,
+            .certification-content {
                 grid-template-columns: 1fr;
                 gap: 40px;
             }
@@ -863,6 +922,9 @@
                     <a href="#about" class="nav-link">عن نفر زيزي</a>
                 </li>
                 <li class="nav-item">
+                    <a href="#certifications" class="nav-link">الشهادات</a>
+                </li>
+                <li class="nav-item">
                     <a href="#gallery" class="nav-link">معرض الصور</a>
                 </li>
                 <li class="nav-item">
@@ -899,7 +961,7 @@
                 </div>
             </div>
             <div class="hero-image animate-on-scroll">
-                <img src="images/hero-bread.jpg" alt="نفر زيزي - العيش المصري الأصلي في كندا">
+                <img src="images/23.png" alt="نفر زيزي - العيش المصري الأصلي في كندا">
             </div>
         </div>
     </section>
@@ -952,22 +1014,40 @@
             </div>
         </div>
     </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="certification-content animate-on-scroll">
+                <div class="certification-image">
+                    <img src="images/26.png" alt="شهادات الجودة لخبز نفر زيزي">
+                </div>
+                <div class="certification-text">
+                    <h3>الخبز الوحيد الحاصل على جميع شهادات الجودة من مصر وكندا وأمريكا</h3>
+                    <a href="https://arqam.news/467176/?fbclid=IwY2xjawMNEjRleHRuA2FlbQIxMQBicmlkETFkSHlJQVY3Q3ltdDQxTEhsAR67ztfJaa2YUsPjHr0LYf_p0MqE3XhH5PINgLYn-Fw-KkTeRhFHc-0ru8xWmg_aem_t_7Sht0zCPqYFZ4eWrTNjw" target="_blank" rel="noopener noreferrer">اقرأ الخبر كاملاً</a>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <!-- Gallery Section -->
     <section id="gallery" class="gallery">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">معرض الصور</h2>
+                <h2 class="section-title">معرض الصور والفيديو</h2>
                 <p class="section-subtitle">لمحات من الأصالة والجودة</p>
             </div>
             <div class="gallery-grid">
+                <a href="https://www.facebook.com/61558922380404/videos/1811496276349351" target="_blank" rel="noopener noreferrer" class="gallery-item animate-on-scroll">
+                    <img src="images/17.png" alt="فيديو عن شركة ريتش بيك المصدرة للخبز">
+                    <div class="video-play-button">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="overlay">ريتش بيك مصرية وبتصدر لـ ١٢ دولة</div>
+                </a>
                 <div class="gallery-item animate-on-scroll">
                     <img src="images/11.png" alt="عملية خبز العيش المصري التقليدي">
                     <div class="overlay">صناعة يدوية أصيلة</div>
-                </div>
-                <div class="gallery-item animate-on-scroll">
-                    <img src="images/17.png" alt="سيدة ترتدي زياً فرعونياً بجانب الخبز">
-                    <div class="overlay">تراث الأجداد</div>
                 </div>
                 <div class="gallery-item animate-on-scroll">
                     <img src="images/13.png" alt="أرغفة خبز نفر زيزي الذهبية الطازجة">
@@ -1082,6 +1162,7 @@
                     <ul>
                         <li><a href="#home">الرئيسية</a></li>
                         <li><a href="#about">عن نفر زيزي</a></li>
+                        <li><a href="#certifications">الشهادات</a></li>
                         <li><a href="#gallery">معرض الصور</a></li>
                         <li><a href="#locations">أين تجدنا؟</a></li>
                         <li><a href="#contact">تواصل معنا</a></li>
